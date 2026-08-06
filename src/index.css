@@ -1,0 +1,64 @@
+:root {
+  /* Paleta "atmósfera": azul-noche de fondo, cian de cielo despejado y
+     ámbar de calima como acento de alerta/CTA. */
+  --ink: #0e1720;
+  --panel: #141f2b;
+  --panel-raised: #192636;
+  --line: #243444;
+  --mist: #93a9b8;
+  --white: #eaf2f5;
+  --sky: #4fc1e9;
+  --sky-dim: #2c7ea3;
+  --haze: #f2a65a;
+  --danger: #e8697d;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--ink);
+  color: var(--white);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+a {
+  color: var(--sky);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
